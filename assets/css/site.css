@@ -1,0 +1,7 @@
+/* Ajustes del sitio comercial independiente (header y footer propios del producto). */
+.standalone .site-header { position: sticky; top: 0; z-index: 50; }
+.standalone .brand img { width: auto; }
+.standalone .site-nav .nav-cta a { margin-left: 8px; padding: 9px 20px; border-radius: 32px; background: var(--pp-btn, var(--green-accent)); color: #fff; }
+.standalone .site-nav .nav-cta a:hover { color: #fff; filter: brightness(1.08); }
+.standalone .footer-geneos img { width: 120px; height: auto; opacity: .85; }
+.standalone .footer-geneos:hover img { opacity: 1; }

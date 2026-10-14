@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://geagro.ar/sitemap.xml
