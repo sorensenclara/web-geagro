@@ -16,6 +16,17 @@ o con un servidor local.
 - `404.html`, `robots.txt` y `sitemap.xml`.
 - `.github/workflows/pages.yml`: publicación en GitHub Pages (se ejecuta a mano).
 
+## Cómo se genera
+
+Este sitio se genera desde la carpeta `GENEOS WEB/tools/sitios-comerciales/`. Los datos comerciales y de contacto
+se editan en un solo lugar (`data/contacto.json` y, para GERP, `data/gerp.json`) y se vuelve a exportar:
+
+```bash
+cd ~/Documents/"GENEOS WEB" && python3 build.py && python3 tools/sitios-comerciales/export.py geagro
+```
+
+Editar a mano los `index.html` funciona, pero la próxima exportación pisa esos cambios.
+
 ## Ver localmente
 
 ```bash
@@ -26,7 +37,7 @@ y abrir http://localhost:8000/
 
 ## Editar
 
-- Textos, precios e imágenes: directamente en los `index.html`.
+- Textos, precios, módulos y contacto: en `tools/sitios-comerciales/data/` (ver «Cómo se genera»).
 - Colores del header: `assets/css/site.css`, bloque `.pp-theme-geagro` (variables `--hd-*`).
 - Colores del producto: `assets/css/product.css`, bloque `.pp-theme-geagro`.
 - Formulario de demo: arma un mensaje de WhatsApp al +54 9 249 452-1418 (`assets/js/product.js`). Cuando exista un backend, cambiar el `action` del formulario.
