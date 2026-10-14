@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="es-AR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>GEAGRO VID | Software para viñedos y gestión vitivinícola</title>
+  <meta name="description" content="Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.">
+  <meta name="robots" content="index, follow, max-image-preview:large">
+<link rel="canonical" href="https://geagro.ar/vid/">  <meta property="og:type" content="website">
+  <meta property="og:locale" content="es_AR">
+  <meta property="og:site_name" content="GEAGRO">
+  <meta property="og:title" content="GEAGRO VID | Software para viñedos y gestión vitivinícola">
+  <meta property="og:description" content="Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.">
+<meta property="og:url" content="https://geagro.ar/vid/">  <meta property="og:image" content="https://geagro.ar/assets/images/vid/og-vid.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="GEAGRO VID, software de gestión de viñedos con alertas de clima y sanidad">  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="GEAGRO VID | Software para viñedos y gestión vitivinícola">
+  <meta name="twitter:description" content="Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.">
+  <meta name="twitter:image" content="https://geagro.ar/assets/images/vid/og-vid.jpg">
+<meta name="twitter:image:alt" content="GEAGRO VID, software de gestión de viñedos con alertas de clima y sanidad">  <meta name="theme-color" content="#ffffff">
+  <link rel="icon" href="../favicon.ico" sizes="48x48">
+  <link rel="icon" type="image/svg+xml" href="../assets/GEAGRO.svg">
+  <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="../assets/icons/favicon/apple-touch-icon.png">
+  <link rel="manifest" href="../assets/icons/favicon/site.webmanifest">
+  <link rel="preload" href="../assets/fonts/titillium-web-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="../assets/fonts/titillium-web-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <style>
+    @font-face { font-family: "Titillium Web"; font-style: normal; font-weight: 400; font-display: swap; src: url("../assets/fonts/titillium-web-latin-400-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Titillium Web"; font-style: normal; font-weight: 600; font-display: swap; src: url("../assets/fonts/titillium-web-latin-600-normal.woff2") format("woff2"); }
+    @font-face { font-family: "Titillium Web"; font-style: normal; font-weight: 700; font-display: swap; src: url("../assets/fonts/titillium-web-latin-700-normal.woff2") format("woff2"); }
+  </style>
+<link rel="preload" as="image" type="image/avif" href="../assets/images/vid/vid-bg-1600.avif" media="(min-width: 901px)" fetchpriority="high">
+<link rel="preload" as="image" type="image/avif" href="../assets/images/vid/vid-bg-900.avif" media="(max-width: 900px)" fetchpriority="high">
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/site.css">
+<link rel="stylesheet" href="../assets/css/product.css">  <script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@graph": [
+  {
+   "@type": "Organization",
+   "@id": "https://geagro.ar/#organizacion",
+   "name": "GENEOS",
+   "legalName": "Cooperativa de Trabajo GENEOS Ltda.",
+   "url": "https://geneos.coop.ar/",
+   "email": "info@geneos.com.ar",
+   "telephone": "+54 9 249 452-1418",
+   "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Alem 1015",
+    "addressLocality": "Tandil",
+    "addressRegion": "Buenos Aires",
+    "postalCode": "B7000",
+    "addressCountry": "AR"
+   }
+  },
+  {
+   "@type": "WebSite",
+   "@id": "https://geagro.ar/#web",
+   "url": "https://geagro.ar/",
+   "name": "GEAGRO",
+   "inLanguage": "es-AR",
+   "publisher": {
+    "@id": "https://geagro.ar/#organizacion"
+   }
+  },
+  {
+   "@type": "WebPage",
+   "@id": "https://geagro.ar/vid/#pagina",
+   "url": "https://geagro.ar/vid/",
+   "name": "GEAGRO VID | Software para viñedos y gestión vitivinícola",
+   "description": "Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.",
+   "inLanguage": "es-AR",
+   "publisher": {
+    "@id": "https://geagro.ar/#organizacion"
+   },
+   "primaryImageOfPage": "https://geagro.ar/assets/images/vid/og-vid.jpg",
+   "isPartOf": {
+    "@id": "https://geagro.ar/#web"
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "FAQPage",
+ "mainEntity": [
+  {
+   "@type": "Question",
+   "name": "¿Qué datos climáticos usa GEAGRO VID?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Lluvias, temperatura, humedad, vientos y condiciones críticas. Con esa información detecta riesgos y genera alertas."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo funcionan las alertas agronómicas?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "El sistema cruza los datos climáticos con el estado fenológico del cultivo, detecta riesgos sanitarios y climáticos (por ejemplo, heladas) y te indica la próxima acción con su prioridad."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Qué es el plan técnico del viñedo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Es la definición de labores e insumos según las etapas del ciclo fenológico. A partir de él se planifican automáticamente las órdenes de trabajo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Puedo ver el historial de aplicaciones?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Sí. Queda registrado el historial de aplicaciones y labores realizadas en cada campaña y cultivo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Sirve para equipos técnicos que asesoran a varios productores?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Está pensada para productores y equipos técnicos. Contanos cómo trabajan en el formulario de demo y te mostramos cómo organizarlo."
+   }
+  },
+  {
+   "@type": "Question",
+   "name": "¿Cómo pido una demo?",
+   "acceptedAnswer": {
+    "@type": "Answer",
+    "text": "Completá el formulario de esta página o escribinos por WhatsApp. Te contactamos para conocer tu viñedo y coordinar la presentación. Los planes y precios están en la página principal de GEAGRO."
+   }
+  }
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "SoftwareApplication",
+ "@id": "https://geagro.ar/vid/#software",
+ "name": "GEAGRO VID",
+ "applicationCategory": "BusinessApplication",
+ "applicationSubCategory": "Software de gestión de viñedos",
+ "operatingSystem": "Web",
+ "url": "https://geagro.ar/vid/",
+ "description": "Software para la gestión de viñedos: clima, fenología y riesgos sanitarios por cuartel, plan técnico y labores del viñedo. Por la Cooperativa GENEOS.",
+ "inLanguage": "es-AR",
+ "image": "https://geagro.ar/assets/images/vid/og-vid.jpg",
+ "publisher": {
+  "@id": "https://geagro.ar/#organizacion"
+ },
+ "isPartOf": {
+  "@id": "https://geagro.ar/#web"
+ },
+ "featureList": [
+  "Gestión de viñedos y cultivos",
+  "Plan técnico del viñedo",
+  "Alertas agronómicas",
+  "Integración de datos climáticos",
+  "Registro de intervenciones",
+  "Seguimiento de órdenes de trabajo",
+  "Estado del viñedo",
+  "Evaluación del desempeño"
+ ]
+}</script>
+<script type="application/ld+json">{
+ "@context": "https://schema.org",
+ "@type": "BreadcrumbList",
+ "itemListElement": [
+  {
+   "@type": "ListItem",
+   "position": 1,
+   "name": "GEAGRO",
+   "item": "https://geagro.ar/"
+  },
+  {
+   "@type": "ListItem",
+   "position": 2,
+   "name": "GEAGRO VID",
+   "item": "https://geagro.ar/vid/"
+  }
+ ]
+}</script>
+</head>
+<body class="standalone pp-theme-geagro page-geagro page-vid page-product">
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../"><img src="../assets/img/geagro/logo-geagro.svg" alt="GEAGRO, ir al inicio" width="414" height="88"></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="menu" aria-label="Abrir menú"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+</button>
+      <nav class="site-nav" id="menu" aria-label="Navegación principal">
+        <ul>
+<li><a href="#incluye">Qué incluye</a></li><li><a href="../cereales/">Cereales</a></li><li><a href="../vid/" aria-current="page">Vid</a></li><li><a href="../#planes">Planes</a></li><li><a href="#faq">Preguntas</a></li>          <li class="nav-cta"><a href="#demo">Solicitar demo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="contenido">
+<div class="pp pp-theme-geagro">
+
+<section class="pp-hero pp-wave" style="--pp-hero-img: image-set(url('../images/vid/vid-bg-1600.avif') type('image/avif'), url('../images/vid/vid-bg-1600.webp') type('image/webp')); --pp-hero-img-sm: image-set(url('../images/vid/vid-bg-900.avif') type('image/avif'), url('../images/vid/vid-bg-900.webp') type('image/webp'));   --pp-wave-next: #fff;">
+  <div class="pp-container pp-hero-grid">
+    <div class="pp-hero-copy">
+<img class="pp-hero-logo" src="../assets/img/geagro/logo-geagro-white.svg" alt="GEAGRO, software de gestión agropecuaria" width="300" height="64"><p class="pp-eyebrow pp-hero-eyebrow">GEAGRO VID</p>      <h1><span>Software de gestión</span> <span>de viñedos para</span> <span>planificar y controlar</span> <span class="pp-hl">tu producción</span></h1>
+<p class="pp-hero-lead">Una solución especializada en viñedos, para productores vitivinícolas y equipos técnicos que necesitan interpretar información climática, fenológica y sanitaria para actuar a tiempo y optimizar cada etapa del cultivo.</p>      <div class="pp-hero-actions"><a class="pp-btn pp-btn-primary " href="#demo" data-version="vid">Solicitar demo de VID</a><a class="pp-btn pp-btn-outline-light " href="#incluye">Qué incluye</a></div>
+    </div>
+    <div class="pp-hero-media">
+      <div class="pp-monitor"><picture><source srcset="../assets/images/vid/panel-vid.webp" type="image/webp"><img src="../assets/images/vid/panel-vid.jpg" alt="Panel productivo de GEAGRO VID con riesgo sanitario por heladas, próxima acción y ejecución de órdenes de trabajo" width="864" height="699" fetchpriority="high"></picture></div>
+    </div>
+  </div>
+</section>
+
+<section class="pp-section pp-white" id="incluye">
+  <div class="pp-container">
+    <header class="pp-head">
+<p class="pp-eyebrow">Qué incluye</p>      <h2>Gestión de viñedos a lo largo de toda la campaña</h2>
+    </header>
+    <ul class="pp-modules-grid pp-modules-4">
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-campo.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Gestión de viñedos y cultivos</h3>
+          <p>Organización completa de la superficie productiva por unidad técnica.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-plan-tecnico.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Plan técnico del viñedo</h3>
+          <p>Labores e insumos según las etapas del ciclo fenológico, para automatizar la planificación de órdenes de trabajo.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-graficos.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Alertas agronómicas</h3>
+          <p>Detección de riesgos sanitarios y climáticos para actuar a tiempo.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-clima.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Integración de datos climáticos</h3>
+          <p>Análisis de lluvias, temperatura, humedad, vientos y condiciones críticas.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-operaciones.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Registro de intervenciones</h3>
+          <p>Historial de aplicaciones y labores realizadas en cada campaña y cultivo.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-compras.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Seguimiento de órdenes de trabajo</h3>
+          <p>Estado de cada orden y labores realizadas.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-insumos.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Estado del viñedo en tiempo real</h3>
+          <p>Estado productivo y sanitario, con indicadores y análisis técnico.</p>
+        </div>
+      </li>
+      <li>
+        <div class="pp-module">
+          <span class="pp-module-ico"><img src="../assets/icons/vid/vid-control.svg" alt="" loading="lazy" decoding="async"></span>
+          <h3>Evaluación del desempeño</h3>
+          <p>Rendimientos y costos del viñedo a lo largo de la campaña.</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="pp-section pp-split pp-soft" id="decisiones">
+  <div class="pp-container pp-split-grid">
+    <div class="pp-split-copy">
+      <p class="pp-eyebrow">Decisiones a tiempo</p>
+      <h2>Con GEAGRO VID gestionás tu viñedo para decidir mejor</h2>
+      <ul class="pp-checks">
+<li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+<b>Detecta riesgos sanitarios</b><span>De forma automática, a partir de las condiciones del cuartel.</span></li><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+<b>Mejora la calidad y el rendimiento</b><span>Reducís la incertidumbre y actuás en el momento justo en cada campaña.</span></li><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+<b>Identifica el estado fenológico</b><span>Del cultivo en cada etapa de la campaña.</span></li><li><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M2.5 8a5.5 5.5 0 0 1 8.25-4.764.5.5 0 0 0 .5-.866A6.5 6.5 0 1 0 14.5 8a.5.5 0 0 0-1 0 5.5 5.5 0 1 1-11 0"/>
+  <path d="M15.354 3.354a.5.5 0 0 0-.708-.708L8 9.293 5.354 6.646a.5.5 0 1 0-.708.708l3 3a.5.5 0 0 0 .708 0z"/>
+</svg>
+<b>Prioriza acciones</b><span>Según cada situación.</span></li>      </ul>
+<p class="pp-split-note">El sistema analiza la información y te indica <strong>qué hacer, cuándo hacerlo y con qué prioridad</strong>, para actuar a tiempo en cada campaña y lote.</p>    </div>
+    <div class="pp-monitor"><picture><source srcset="../assets/images/vid/panel-vid.webp" type="image/webp"><img src="../assets/images/vid/panel-vid.jpg" alt="Panel de GEAGRO VID con alerta por riesgo de heladas y próximas actividades del viñedo" width="864" height="699" loading="lazy" decoding="async"></picture></div>
+  </div>
+</section>
+
+<section class="pp-section pp-steps" id="como-funciona" style="--pp-steps-pb: clamp(64px, 8vw, 104px); --pp-steps-pb-sm: 64px; --pp-soft-2: #fff;">
+  <div class="pp-container pp-steps-grid">
+    <div class="pp-steps-head">
+      <p class="pp-eyebrow pp-eyebrow-2">Cómo funciona</p>
+      <h2>Del dato del viñedo a la acción<span class="pp-dot">.</span></h2>
+      <p class="pp-steps-lead">GEAGRO VID transforma información compleja en decisiones simples: reducís la incertidumbre y actuás en el momento justo, mejorando la calidad y el rendimiento del viñedo.</p>
+    </div>
+    <ol class="pp-steps-list">
+      <li>
+        <span class="pp-steps-ico"><img src="../assets/icons/proceso/vid-paso-clima.svg" alt="" loading="lazy" decoding="async"></span>
+        <span class="pp-steps-num">01</span>
+        <h3>Registra datos climáticos</h3>
+      </li>
+      <li>
+        <span class="pp-steps-ico"><img src="../assets/icons/proceso/vid-paso-alerta.svg" alt="" loading="lazy" decoding="async"></span>
+        <span class="pp-steps-num">02</span>
+        <h3>Detecta riesgo y genera alerta</h3>
+      </li>
+      <li>
+        <span class="pp-steps-ico"><img src="../assets/icons/proceso/vid-paso-planifica.svg" alt="" loading="lazy" decoding="async"></span>
+        <span class="pp-steps-num">03</span>
+        <h3>Permite planificar acciones estratégicas</h3>
+      </li>
+      <li>
+        <span class="pp-steps-ico"><img src="../assets/icons/proceso/vid-paso-gestiona.svg" alt="" loading="lazy" decoding="async"></span>
+        <span class="pp-steps-num">04</span>
+        <h3>Gestiona las operaciones</h3>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<section class="pp-band">
+  <div class="pp-container">
+    <p class="pp-eyebrow pp-eyebrow-light">Demo de GEAGRO VID</p>
+    <h2>Te mostramos GEAGRO VID con tus propios cuarteles.</h2>
+    <p>Coordinamos una demo para conocer tu viñedo y mostrarte cómo anticipar riesgos y priorizar labores.</p>
+    <div class="pp-cta-actions"><a class="pp-btn pp-btn-accent " href="#demo" data-version="vid">Solicitar demo <span aria-hidden="true">→</span></a><a class="pp-btn-ghost-light " href="../#planes">Ver planes y precios</a></div>
+  </div>
+</section>
+
+<section class="pp-section pp-faq-section" id="faq">
+  <div class="pp-container pp-faq">
+    <div class="pp-faq-head">
+      <p class="pp-eyebrow pp-eyebrow-2">Preguntas frecuentes</p>
+      <h2>Sobre GEAGRO VID<span class="pp-dot">.</span></h2>
+<p>¿Tenés otra duda? Escribinos por WhatsApp o dejanos tus datos en el formulario de demo.</p>    </div>
+    <div class="pp-faq-list">
+      <details name="faq">
+        <summary>¿Qué datos climáticos usa GEAGRO VID?</summary>
+        <div class="pp-faq-answer"><p>Lluvias, temperatura, humedad, vientos y condiciones críticas. Con esa información detecta riesgos y genera alertas.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿Cómo funcionan las alertas agronómicas?</summary>
+        <div class="pp-faq-answer"><p>El sistema cruza los datos climáticos con el estado fenológico del cultivo, detecta riesgos sanitarios y climáticos (por ejemplo, heladas) y te indica la próxima acción con su prioridad.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿Qué es el plan técnico del viñedo?</summary>
+        <div class="pp-faq-answer"><p>Es la definición de labores e insumos según las etapas del ciclo fenológico. A partir de él se planifican automáticamente las órdenes de trabajo.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿Puedo ver el historial de aplicaciones?</summary>
+        <div class="pp-faq-answer"><p>Sí. Queda registrado el historial de aplicaciones y labores realizadas en cada campaña y cultivo.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿Sirve para equipos técnicos que asesoran a varios productores?</summary>
+        <div class="pp-faq-answer"><p>Está pensada para productores y equipos técnicos. Contanos cómo trabajan en el formulario de demo y te mostramos cómo organizarlo.</p></div>
+      </details>
+      <details name="faq">
+        <summary>¿Cómo pido una demo?</summary>
+        <div class="pp-faq-answer"><p>Completá el formulario de esta página o escribinos por WhatsApp. Te contactamos para conocer tu viñedo y coordinar la presentación. Los planes y precios están en la <a href="../#planes">página principal de GEAGRO</a>.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<section class="pp-section pp-soft">
+  <div class="pp-container pp-convert">
+    <div class="pp-convert-side">
+      <div class="pp-card" id="brochure">
+        <p class="pp-eyebrow">Brochure</p>
+        <h2>Llevate toda la información</h2>
+        <div class="pp-brochure-file">
+          <img src="../assets/icons/brand/isologo-vid.svg" alt="" loading="lazy" decoding="async" width="56" height="56">
+          <span><b>Brochure de GEAGRO VID</b>PDF · 9 páginas · 1,7 MB</span>
+        </div>
+        <p>Módulos, funcionalidades y paneles de GEAGRO VID, para compartir con tu equipo técnico.</p>
+        <a class="pp-btn pp-btn-primary " href="../assets/docs/Brochure-GEAGRO-VID.pdf" download="Brochure-GEAGRO-VID.pdf"><svg class="icon bi" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+  <path d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5"/>
+  <path d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708z"/>
+</svg>
+ Descargar brochure</a>
+      </div>
+    </div>
+
+    <div class="pp-card" id="demo">
+      <p class="pp-eyebrow">Demo</p>
+      <h2>Solicitá tu demo de GEAGRO VID</h2>
+      <p>Completá tus datos y te contactamos para coordinar una presentación.</p>
+      <form class="pp-form" action="#" novalidate data-product="GEAGRO">
+        <div class="pp-row"><label for="f-nombre">Nombre y apellido<input id="f-nombre" name="nombre" required autocomplete="name" data-wa="Nombre"></label><label for="f-empresa">Establecimiento o empresa<input id="f-empresa" name="empresa" autocomplete="organization" data-wa="Establecimiento"></label></div>
+        <div class="pp-row"><label for="f-email">Email<input id="f-email" name="email" type="email" required autocomplete="email" data-wa="Email"></label><label for="f-telefono">Teléfono / WhatsApp<input id="f-telefono" name="telefono" type="tel" autocomplete="tel" data-wa="Teléfono"></label></div>
+        <div class="pp-row"><label for="f-localidad">Localidad y provincia<input id="f-localidad" name="localidad" placeholder="Ej.: Tandil, Buenos Aires" data-wa="Localidad"></label><label for="f-superficie">Superficie aproximada (ha)<input id="f-superficie" name="superficie" placeholder="Ej.: 250" inputmode="decimal" data-wa="Superficie" data-suffix="ha"></label></div>
+        <fieldset class="pp-radios">
+          <legend>¿Qué versión te interesa?</legend>
+          <label for="v-vid"><input type="radio" id="v-vid" name="version" value="VID" checked> VID</label>
+          <label for="v-campo"><input type="radio" id="v-campo" name="version" value="CEREALES"> CEREALES</label>
+          <label for="v-ambas"><input type="radio" id="v-ambas" name="version" value="Ambas"> Ambas</label>
+        </fieldset>
+        <label for="f-msg">Contanos sobre tu viñedo<textarea id="f-msg" name="mensaje" placeholder="Superficie, variedades, cómo registrás hoy la información…" data-wa="Mensaje"></textarea></label>
+        <div class="pp-form-actions">
+          <button type="submit" class="pp-btn pp-btn-primary">Solicitar demo</button>
+          <p class="pp-form-status" role="status"></p>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>
+
+</div>
+<script src="../assets/js/product.js" defer></script>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-cols">
+      <div class="footer-about">
+        <img src="../assets/img/geagro/logo-geagro-white.svg" alt="GEAGRO" width="300" height="64" loading="lazy" style="height:44px;width:auto">
+        <p>GEAGRO es el software de gestión agropecuaria de GENEOS para campañas agrícolas (CEREALES) y viñedos (VID).</p>
+      </div>
+      <nav aria-label="GEAGRO">
+        <p class="footer-title">GEAGRO</p>
+        <ul class="footer-links">
+<li><a href="../">GEAGRO · Inicio</a></li><li><a href="../cereales/">GEAGRO CEREALES</a></li><li><a href="../vid/">GEAGRO VID</a></li><li><a href="../#planes">Planes</a></li>          <li><a href="#demo">Solicitar demo</a></li>
+        </ul>
+      </nav>
+      <nav aria-label="GENEOS">
+        <p class="footer-title">Un producto de GENEOS</p>
+        <ul class="footer-links">
+          <li><a href="https://geneos.coop.ar/">GENEOS · Cooperativa de software libre</a></li>
+<li><a href="https://gerp.ar/">GERP · Software de gestión</a></li>        </ul>
+      </nav>
+      <address class="footer-contact">
+        <p class="footer-title">Contacto</p>
+        <a class="footer-item" href="https://wa.me/5492494521418" target="_blank" rel="noopener"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9.5 9.5c0 2.8 2.2 5 5 5l1-1.2-1.6-1-1 .7a3.6 3.6 0 0 1-1.9-1.9l.7-1-1-1.6z"/></svg>
+</span><span>+549 2494 521418</span></a>
+        <a class="footer-item" href="mailto:info@geneos.com.ar"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+</span><span>info@geneos.com.ar</span></a>
+        <a class="footer-item" href="https://maps.app.goo.gl/SG3oBGYpz7ttdvbB8" target="_blank" rel="noopener"><span class="footer-icon"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+</span><span>Alem 1015 - Tandil<br><small>Buenos Aires - Argentina</small></span></a>
+      </address>
+    </div>
+    <div class="container footer-bottom">
+      <a class="footer-geneos" href="https://geneos.coop.ar/"><img src="../assets/img/2023/10/Logo-Geneos-white.webp" alt="GENEOS" width="140" height="45" loading="lazy"></a>
+      <p class="credit">© 2026 Cooperativa GENEOS Ltda. · Software libre hecho en Tandil, Argentina</p>
+    </div>
+  </footer>
+  <a class="wa-float" href="https://wa.me/5492494521418" target="_blank" rel="noopener" aria-label="Escribinos por WhatsApp"><svg class="icon" aria-hidden="true" focusable="false" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><path d="M9.5 9.5c0 2.8 2.2 5 5 5l1-1.2-1.6-1-1 .7a3.6 3.6 0 0 1-1.9-1.9l.7-1-1-1.6z"/></svg>
+</a>
+  <script src="../assets/js/main.js" defer></script>
+  <script src="../assets/js/site.js" defer></script>
+</body>
+</html>
